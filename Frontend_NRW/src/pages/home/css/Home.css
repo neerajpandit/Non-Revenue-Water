@@ -1,0 +1,130 @@
+.home-background {
+  height: 100%;
+  width: 100vw;
+  position: relative;
+}
+.hero-section {
+  background-image: url("../Assets/Vector.svg");
+  background-size: cover; 
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-repeat: no-repeat;
+}
+
+.home-heading {
+  color: var(--neutral-1, #141a1e); 
+  font-family: Poppins;
+  /* margin-left: 10%;
+  padding-top: 50px; */
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 80px;
+  margin-left: 220px;
+  /* line-height: 77.704px; */
+}
+
+.home-heading2 {
+  width: 60vw;
+  padding-left: 35px;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-mddle-p {
+  color: var(--neutral-1, #141a1e);
+  font-family: Poppins;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 600;
+  /* line-height: 98.984px; */
+  padding-left: 0;
+  padding-top: 50px;
+  margin-bottom: 55px;
+}
+
+.home-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+.home-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 200px;
+}
+
+.home-box li {
+  margin-bottom: 20px;
+}
+
+.home-box p {
+  color: var(--black-1, #2f302c);
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  margin: 0;
+}
+
+.home-box img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.iphone-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding-right: 5%;
+  padding-top: 5%; */
+  width:40vw;
+}
+.iphone-img img{
+  margin-right: 20vw;
+}
+.box-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.box-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.search-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1006px) {
+  .home-mddle-p {
+    font-size: 35px;
+  }
+  .home-heading {
+    font-size: 28px;
+    margin-left: 140px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .iphone-img{
+    display: none;
+    visibility: hidden;
+  }
+  .home-heading2{
+    width: 100vw;
+  }
+  .home-mddle-p {
+    font-size: 30px;
+  }
+  .home-heading {
+    font-size: 25px;
+    margin-left: 70px;
+  }
+}

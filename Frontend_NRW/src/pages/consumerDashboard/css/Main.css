@@ -1,0 +1,104 @@
+.main {
+    text-align: center;
+  }
+  
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+  .blog-card {
+    width: 29%;
+    margin: 20px 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+    .blog-card:hover {
+      transform: scale(1.05);
+    }
+  
+    .blog-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      overflow: hidden;
+    }
+  
+    .blog-card h2 {
+      margin: 20px 10px;
+    }
+  
+    .blog-card p {
+      margin: 0 10px;
+    }
+  
+    .author {
+      display: flex;
+      align-items: center;
+      margin: 20px;
+    
+    }
+      .author img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+  
+      .author span {
+        font-weight: bold;
+      }
+    
+      .pagination {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      
+      .pagination li {
+        margin: 0 5px;
+      }
+      
+      .pagination a {
+        text-decoration: none;
+        color: #333;
+        padding: 5px 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+      
+      .pagination a:hover {
+        background-color: #ddd;
+      }
+      
+      .pagination .active a {
+        background-color: #333;
+        color: #fff;
+      }
+  
+  /* Responsive CSS */
+  
+  @media (max-width: 1200px) {
+    .blog-card {
+      width: 45%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .blog-card {
+      width: 70%;
+    }
+    .blog-card img {
+      width: 60%;
+      height: 200px;
+      object-fit: cover;
+      overflow: hidden;
+    }
+  }
+  

@@ -1,0 +1,17 @@
+.session-container{
+    width: 100vw;
+    position: relative;
+}
+.session-section{
+    width: 100vw;
+    height: 32vh;
+    background-image:url('/public/img/about-bg.svg');
+    background-size: cover; 
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+.session-section p{
+    margin: 20px;
+}

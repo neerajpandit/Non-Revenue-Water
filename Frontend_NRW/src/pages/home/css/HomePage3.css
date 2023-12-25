@@ -1,0 +1,202 @@
+.core-features{
+  margin-bottom: 50px;
+}
+.core-headings{
+  text-align: center;
+  width: 100%;
+  margin-bottom: 35px;
+}
+.corelarge-heading {
+  font-size: 5rem; 
+  text-transform: uppercase;
+  color: #ddd; 
+}
+
+.coresmall-heading {
+  font-size: 1.5rem; 
+  text-transform: uppercase;
+  color: #0C8AE4; 
+  margin-top: -50px;
+  font-weight: bolder;
+}
+.Home-page-3 {
+  display: flex;
+  width: 100vw;
+}
+
+.h3-Heading {
+  color: #0C8AE4;
+  padding-top: 50px;
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 80px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.con{
+  display: flex;
+  flex-direction: row !important;
+}
+
+.container>div {
+  text-align: center;
+  margin: 0px 20px;
+  flex: 1;
+}
+
+/* .container img {
+  width: 200px
+
+} */
+
+.container p {
+  /* margin-top: 10px; */
+  font-weight: bold;
+  color: var(--foundation-grey-grey-500, #575757);
+  font-size: 16.296px;
+}
+
+.core-product-section {
+  display: flex;
+  margin: auto;
+  width: 70vw;
+  height: 60vh;
+  color: var(--foundation-green-green-50, #EDF7EA);
+  background-color: #0C8AE4;
+  border-radius: 20px;
+}
+
+.c-p_heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+.cp-head {
+  font-size: 35px;
+  text-align: center;
+}
+
+.c-p_para p {
+
+  margin: 5%;
+  padding: 5px 5px;
+  font-size: 20px;
+  font-style: normal;
+  line-height: normal;
+  color: var(--foundation-green-green-50, #EDF7EA);
+  text-align: center;
+  font-weight: 100;
+}
+
+.waterTap {
+  display: flex;
+  flex-direction: row;
+  height: 300px;
+}
+
+.waterTapHeading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  font-size: 40px;
+  color: #0C8AE4;
+}
+
+.search-icon {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.CF-heading {
+  color: #0C8AE4;
+  font-size: 40px;
+  text-align: center;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width:1030px) {
+  .core-headings{
+    height: 120px;
+    margin-top: 20px;
+    margin-bottom: 28px;
+  }
+  .corelarge-heading{
+    font-size: 3rem;
+  }
+  .coresmall-heading{
+    margin-top: -35px;
+  }
+}
+@media (max-width: 900px) {
+  .h3-Heading {
+    width: 100vw;
+  }
+
+  .container {
+    flex-direction: column; 
+    padding-bottom: 40px;
+  }
+
+  .container>div {
+    margin: 10px;
+  }
+
+.large-heading, .upper-head{
+  font-size: 50px !important;
+}
+
+  .cp-head {
+    font-size: 30px;
+    text-align: center;
+    /* Adjust as needed for smaller screens */
+  }
+
+  .c-p_para p {
+    margin-left: 0;
+    text-align: center; /* Adjust as needed for smaller screens */
+    padding: 10px;
+  }
+
+  .waterTap {
+    flex-direction: column; /* Adjust as needed for smaller screens */
+    height: auto;
+  }
+
+  .waterTapHeading {
+    padding-top: 10px;
+    font-size: 30px; /* Adjust as needed for smaller screens */
+  }
+
+  .search-icon {
+    padding-top: 20px;
+  }
+
+  .CF-heading {
+    font-size: 30px; /* Adjust as needed for smaller screens */
+  }
+}
+@media (max-width:500px) {
+  .core-headings{
+    height: 90px;
+    margin-top: 20px;
+    margin-bottom: 14px;
+  }
+  .corelarge-heading{
+    font-size: 2rem;
+  }
+  .coresmall-heading{
+    margin-top: -25px;
+    font-size: 1rem;
+  }
+}

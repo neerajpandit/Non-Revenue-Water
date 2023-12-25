@@ -1,0 +1,137 @@
+.overview-headings{
+    text-align: center;
+    width: 100%;
+    height: 80px;
+    margin-top: 30px;
+  }
+  .overviewlarge-heading{
+    font-size: 5rem; 
+    text-transform: uppercase;
+    color: #ddd; 
+  }
+  
+  .overviewsmall-heading{
+    font-size: 1.5rem; 
+    text-transform: uppercase;
+    color: #0C8AE4; 
+    margin-top: -50px;
+    font-weight: bolder;
+  }
+  .project{
+    display: flex;
+    justify-content:space-around;
+    align-items:flex-start;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .overview-text{
+    width: 60vw;
+    padding-left: 25px;
+    padding-right: 5px;
+  }
+  .overview-text h2{
+    margin-top: 10px;
+    font-size: 32px;
+    color: #0c8ae4;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .overview-text p{
+    font-size: 20px;
+  }
+  #overview-btn{
+    margin-top: 30px;
+  }
+  .overview-image{
+    width: 40vw;
+    margin-bottom: 30px;
+  }
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.overview-image,
+.overview-text {
+  animation-duration: 5s;
+  animation-timing-function: ease;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.project-overview.animation-played .overview-image {
+  animation-name: slideInLeft;
+}
+
+.project-overview.animation-played .overview-text {
+  animation-name: slideInRight;
+}
+
+.overview-image {
+  animation-name: slideInLeft;
+}
+
+.overview-text {
+  animation-name: slideInRight;
+}
+
+
+  @media (max-width:1030px) {
+    .overview-headings{
+      height: 120px;
+    }
+
+    .overviewlarge-heading{
+      font-size: 3rem;
+    }
+    .overviewsmall-heading{
+      margin-top: -35px;
+    }
+    #overview-btn{
+      margin-top: 20px;
+    }
+  }
+  @media (max-width:800px) {
+   .overview-image{
+    display: none;
+   }
+   .overview-text{
+    width: 100vw;
+   }
+}
+@media (max-width:500px) {
+  .overview-headings{
+    height: 90px;
+  }
+  .overviewlarge-heading{
+    font-size: 2rem;
+  }
+  .overviewsmall-heading{
+    margin-top: -25px;
+    font-size: 1rem;
+  }
+  .overview-text h2{
+    margin-top: 5px;
+    font-size: 20px;
+  }
+  .overview-text p{
+    font-size: 15px;
+  }
+}

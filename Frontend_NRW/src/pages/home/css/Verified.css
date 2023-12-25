@@ -1,0 +1,90 @@
+/* Default styles for larger screens */
+.verified-main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.verify-img {
+    height: 324px;
+    width: 600px;
+    display: flex;
+    position: absolute;
+    left: 30%;
+    right: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.verify-heading {
+    color: var(--foundation-grey-grey-800, #303030);
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 40px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.verify-para {
+    color: var(--foundation-grey-grey-300, #8E8E8E);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.verify-btn {
+    background-color: #62CDFA;
+    display: flex;
+    width: 500px;
+    height: 60px;
+    padding: 13px 83px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border: none;
+    margin-top: 50px;
+    margin-left: 50px;
+    color: var(--foundation-green-green-50, #EDF7EA);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 20px;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 767px) {
+    .verify-img {
+        width: 80%; /* Adjust as needed for smaller screens */
+        left: 10%;
+        right: 10%;
+    }
+
+    .verify-heading {
+        font-size: 20px; /* Adjust as needed for smaller screens */
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+
+    .verify-para {
+        font-size: 16px; /* Adjust as needed for smaller screens */
+        margin-top: 15px;
+        margin-right: 15px;
+    }
+
+    .verify-btn {
+        width: 80%; /* Adjust as needed for smaller screens */
+        padding: 10px 20px;
+        margin-top: 30px;
+        margin-left: 10%;
+        font-size: 18px; /* Adjust as needed for smaller screens */
+    }
+}
