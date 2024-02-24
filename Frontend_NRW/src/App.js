@@ -1,4 +1,5 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import './App.css';
 import LoginReg from "./pages/auth/LoginReg";
 import ResetPassword from "./pages/auth/ResetPassword";
 import SendPasswordResetEmail from "./pages/auth/SendPasswordResetEmail";
@@ -24,6 +25,8 @@ import FAQ from "./pages/consumerDashboard/support/FAQ";
 import BillingSystem from "./pages/jalnigamDashboard/BillingSystem";
 import MeterTable from "./pages/jalnigamDashboard/Notification";
 import Crud from "./pages/consumerDashboard/Payment";
+import ConsumerDetails from "./pages/govtDashboard/ConsumerDetails";
+import ConsumerBilling from "./pages/govtDashboard/ConsumerBilling";
 function App() {
   const { access_token } = useSelector(state => state.auth)
   return (
@@ -58,6 +61,8 @@ function App() {
           <Route path="/bill" element={<Crud/>} />
 					<Route path="/jalnigamdashboard" element={<JalNigamDashboard/>} />
 					<Route path="/billing" element={<BillingSystem/>} />
+          <Route exact path="/govtDashboard" element={<ConsumerDetails/>} />
+            <Route exact path="/consumerBilling" element={<ConsumerBilling/>} />
           {/* <Route path="/dashboard" element={access_token ? <Dashboard /> : <Navigate to="/login" />} /> */}
           <Route path="/dashboard" element={ <Dashboard />} />
           <Route path="*" element={<h1>Error 404 Page not found !!</h1>} />

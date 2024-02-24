@@ -57,7 +57,10 @@ const Navbar2 = () => {
             <Button color="inherit" component={Link} to="/jalnigamdashboard">Dashboard</Button>
             <Button color="inherit" component={Link} to="/billing">GIS Mapping</Button>
             <Button color="inherit" component={Link} to="/notification"><img src={icon} width={'30px'}></img></Button>
-            <Button color="inherit" component={Link} to="/billing">Logout</Button>
+            {/* <Button color="inherit" component={Link} to="/billing">Logout</Button> */}
+            <Button color="inherit" onClick={handleLogout}>
+          Logout
+        </Button>
           </div>
         </Toolbar>
       </AppBar>

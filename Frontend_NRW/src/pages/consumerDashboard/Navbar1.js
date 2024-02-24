@@ -4,6 +4,7 @@ import { AppBar, Toolbar, IconButton, Typography, Button, Drawer, List, ListItem
 import MenuIcon from '@mui/icons-material/Menu';
 import Group from '../home/Assets/Group.png';
 import './css/Navbar1.css'; 
+import ProfileIcon from './Assets/profile-logo.png';
 import { useNavigate } from 'react-router-dom';
 import { unSetUserToken } from '../../features/authSlice';
 import { getToken, removeToken } from '../../services/LocalStorageService';
@@ -104,7 +105,7 @@ const [supportDropdownVisible, setSupportDropdownVisible] = useState(false);
 
            <div className="dropdown-container">
           <Button color="inherit" onClick={toggleProfileDropdown} className="support-dropdown">
-            Profile
+          <img src={ProfileIcon} alt='Profile' width={'35px'} height={'35px'}></img>
           </Button>
           {profileDropdownVisible && (
             <div className="dropdown-content">
@@ -126,13 +127,12 @@ const [supportDropdownVisible, setSupportDropdownVisible] = useState(false);
               <Button color="inherit" onClick={handleLogout}>
                 Logout
               </Button>
-              <hr />
             </div>
           )}
         </div>
-        <Button color="inherit" onClick={handleLogout}>
+        {/* <Button color="inherit" onClick={handleLogout}>
           Logout
-        </Button>
+        </Button> */}
       </div>
 
         </Toolbar>
